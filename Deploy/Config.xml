@@ -5,7 +5,7 @@
 		<!--服务访问端口-->
 		<Port>1066</Port>
 		<!--管理员密码(管理员登录路由/Admin/Login) 重要：首次启动前必须更改-->
-		<LoginPassword>12345678</LoginPassword>
+		<LoginPassword>abc12345</LoginPassword>
 		<!--是否启用内核多线程支持-->
 		<CoreMultiThread>true</CoreMultiThread>
 		<!--网站备案号（选填）-->
@@ -16,7 +16,7 @@
 	<!--站点Kestrel服务器HTTPS配置 （只支持IIS证书类型 即PFX格式的证书）-->
 	<HTTPS>
 		<!--Kestrel是否启用HTTPS(SSL加密传输)-->
-		<Enable>false</Enable>
+		<Enable>true</Enable>
 		<!--SSL证书文件名 (需要将PFX格式的SSL证书放置于该配置文件的同级目录Deploy文件夹下) 如e5.sundayrx.net.pfx-->
 		<!--不填则默认使用Dev localhost 本地证书-->
 		<Certificate></Certificate>
@@ -26,7 +26,7 @@
 	<!--共享站点配置,不共享可无视以下内容 (若要共享站点 请自备以下所需的配置信息 且配置中HTTPS必须启用)-->
 	<ShareSite>
 		<!--是否启用站点共享-->
-		<Enable>false</Enable>
+		<Enable>true</Enable>
 		<!--SMTP邮件发送支持-->
 		<SMTP>
 			<!--发件邮箱-->
@@ -60,7 +60,7 @@
 		<!--站点系统设置-->
 		<System>
 			<!--站点启动后默认是否允许用户注册 建议为false-->
-			<AllowRegister>false</AllowRegister>
+			<AllowRegister>true</AllowRegister>
 			<!--站点启动后默认公告（换行符请使用 &#x000D;&#x000A; 进行换行）-->
 			<Notice></Notice>
 			<!--站点运营者-->
