@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: '365renew'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9F633E2D12864CAA9F6BD2E41DF6D5F3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_58A9BF576D694AAB9C25DE9C47FDF554 }}
           package: .
